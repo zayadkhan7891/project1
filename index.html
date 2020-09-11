@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: brown;
+        margin: 0px;
+        padding: 0px;
+        background: url();
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline;
+        border: 2px solid red;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 32%;
+        margin: 20px auto;
+        border: 2px solid green;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline;
+        border: 2px solid yellow;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(255, 166, 0);
+        text-decoration: none;
+        padding: 0px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(15, 15, 15);
+        color: rgb(255, 255, 255);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid black;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 55%;
+        border-radius: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .formgrup input {
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container button {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/lion-logo-illustration-design-clip-art-png-favpng-jrrKRwSagk2wejYNNAgyW8Xig.jpg" alt="">
+            <div>Harry Fitness</div>
+        </div>
+        <!-- mid for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#"> Center</a></li>
+                <li><a href="#">contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best GYM In BD</h1>
+        <form action="#">
+            <div class="formgrup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgrup">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgrup">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="formgrup">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
