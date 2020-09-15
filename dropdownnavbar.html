@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            background: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: grey;
+            text-transform: capitalize;
+            display: inline-block;
+        }
+
+        ul li a:hover {
+            background: greenyellow;
+            color: red;
+        }
+
+        .dropdown {
+            background: white;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown a {
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background: #f1f1f1;
+        }
+
+        .drop:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li class="drop">
+            <a href="#">about</a>
+            <div class="dropdown">
+                <a href="#">edunnfnjydjv</a>
+                <a href="#">loldjydfjyfdjfj</a>
+                <a href="#">fukjdjdfj</a>
+            </div>
+        </li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">our clint</a></li>
+        <li><a href="#">contant</a></li>
+    </ul>
+</body>
+
+</html>
