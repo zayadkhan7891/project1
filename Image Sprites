@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites</title>
+    <style>.icons{
+        overflow: hidden;
+    }
+    .icons ul{
+        margin: 0;
+        padding: 0;
+    }
+    .icons ul li {
+        list-style-type: none;
+        float: left;
+        margin-right: 10px;
+    }
+    .icons ul li:last-child{
+        margin-right: 0;
+    }
+    .icons ul li a{
+        background-image: url('icon.jpg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 60px;
+        height: 80px;
+        display: inline-block;
+        border: 2px solid grey;
+        border-radius: 10%;
+        transition: 1s;
+    }
+    .icons ul li:hover:nth-child(1) a{
+        background-position: 0 -175px;
+    }
+    .icons ul li:nth-child(2) a{
+        background-position: -68px 0;
+    }
+    .icons ul li:hover:nth-child(2) a{
+        background-position: -68px -177px;
+    }
+    .icons ul li:nth-child(3) a{
+        background-position: -136px 0;
+    }
+    .icons ul li:hover:nth-child(3) a{
+        background-position: -137px -177px;
+    }</style>
+</head>
+<body>
+    <div class="icons">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
