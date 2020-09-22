@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <link rel="shortcut icon" href="fb-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    background: #3E5C9A;
+    padding: 9px 0;
+}
+.header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+.logo-area{
+width: 30%;
+float: left;
+}
+.logo-area img{
+    width: 180px;
+    margin-top: 2px;
+}
+.login-area{
+width: 70%;
+float: left;
+color: white;
+}
+.login-area form{
+    float: right;
+}
+.login-area label,
+.login-area input{
+    display: block;
+}
+.login-area .email,
+.login-area .password,
+.login-area .login {
+    float: left;
+    margin-right: 13px;
+}
+.login-area label{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.login-area .login{
+    margin-right: 0;
+}
+.login-area input[type="text"]
+.login-area input[type="password"]{
+    border: 1px solid #000;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+.login-area .password a {
+    text-decoration: none;
+    color: #9cb4d8;
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo-area">
+                <img src="logo.png" alt="Facebook" width="200">
+            </div>
+            <div class="login-area">
+                <form action="#" method="POST">
+                    <div class="email">
+                        <label for="email">Email or Phone</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password ">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+                    <div class="login">
+                        <input type="submit" value="Log in">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
